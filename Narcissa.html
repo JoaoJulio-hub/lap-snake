@@ -1,0 +1,58 @@
+<html>
+  <!--
+    Nercisa!!! HTML
+
+    0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+    -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Linguagens e Ambientes de Programação (2022/2023) [Eng.Inf. - DI/FCT/UNL]
+      - 3º projeto prático (Javascript)
+    </title>
+
+    <script type="text/javascript" src="Narcissa0.js"></script>
+    <script type="text/javascript" src="Narcissa.js"></script>
+  </head>
+
+  <body onload="onLoad()">
+    <div id="menu" style="display: none; align-items: center; justify-content: center; width:100vw; height:100vh;">
+      <h1 id="menuTitle" style="color:red; margin-right: 10px;"></h1>
+      <h2 style="font-weight: bold; color: aqua">Last score: <span id="lastScore"></span><h2/>
+      <h2 style="font-weight: bold; color: green; margin-left:15px;">LastTime: <span id="lastTime"></span><h2/>
+      <button style="margin-left:15px;" onclick="reset()">Restart</button>
+    </div>
+    <form id="formSnake" name="form1">
+      <p><b>Narcissa</b> -- Author1 Joao Julio 61610, Author2 Rodrigo Freitas 62942</p>
+      <p style="font-weight: bold; color: aqua;">Actual score: <span id="currentScore"></span></p>
+      <p style="font-weight: bold; color: green;">Time: <span id="currentTime"></span></p>
+      <canvas
+        id="canvas1"
+        width="1120"
+        height="640"
+        style="border: 1px solid #000000"
+      >
+        Your browser doesn't support the HTML5 CANVAS tag.
+      </canvas>
+      <p>
+        <input
+          id="resetButton"
+          type="button"
+          name="button1"
+          value="Reset"
+          size="10"
+        />
+        <input
+          type="button"
+          name="button2"
+          value="Pause"
+          size="10"
+          OnClick="pause()"
+        />
+      </p>
+    </form>
+  </body>
+</html>
+<!-- código inicial de AMD/2023 -->
+<!-- vim:set ts=4 sw=4 et: -->
